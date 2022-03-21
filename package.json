@@ -1,0 +1,22 @@
+{
+  "name": "messenger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "watch": "parcel 'src/index.html' --open --port 3000",
+    "dev": "parcel 'src/index.html'",
+    "build": "parcel build 'src/index.html'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.17.3",
+    "express-handlebars": "^6.0.3",
+    "handlebars": "^4.7.7",
+    "parcel": "^2.3.2"
+  }
+}
