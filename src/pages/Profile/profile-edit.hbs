@@ -1,14 +1,15 @@
 ---
-title: SignUp
-cssPath: 
-  - signup.css
+title: Profile Edit
+cssPath:
+  - ../Signup/signup.css
+  - profile.css
 ---
 
-{{!< main}} 
+{{!< main}}
 
 <div class="main">
-  <form method="post" class="signup-form" name="newUserForm">
-    <span class="signup-form__title">Регистрация</span>
+  <form method="post" class="signup-form" name="editUserForm">
+    <span class="signup-form__title">Редактирование</span>
     <div class="signup-form__inputs">
       <div class="signup-form__inputs-item">
         <label class="signup-form__label">Почта</label>
@@ -45,6 +46,6 @@ cssPath:
         <input type="text" class="input signup-form__input" name="passwordConfirmed" />
       </div>
     </div>
-    <button type="submit" class="signup-form__button">Создать аккаунт</button>
+    <button type="submit" class="signup-form__button">Применить изменения</button>
   </form>
   </div>

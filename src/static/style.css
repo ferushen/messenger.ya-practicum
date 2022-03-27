@@ -1,0 +1,56 @@
+@import '../components/chat-item.css';
+
+@font-face {
+  font-family: "Exo2";
+  src: url("../fonts/Exo2-Light.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Exo2";
+  src: url("../fonts/Exo2-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Exo2";
+  src: url("../fonts/Exo2-ExtraBold.ttf");
+  font-weight: 800;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  align-content: center; 
+  justify-content: center; 
+}
+
+.input {
+  height: 36px;
+  line-height: 36px;
+  padding: 0 10px;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Exo2';
+  font-weight: 300;
+  font-size: 18px;
+  background-color: #EDEDED;
+}
+
+.button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #717171;
+}
+
+a:visited {
+  color: #717171;
+}

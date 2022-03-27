@@ -1,0 +1,17 @@
+<div class="chats-block__chat {{#if isActive}} chats-block__chat_active {{/if}} ">
+  <div class="chats-block__chat-avatar"></div>
+  <div class="chats-block__chat-information">
+    <div class="chats-block__chat-information-top">
+      <span class="chats-block__chat-title">{{ title }}</span>
+      <span class="chats-block__chat-time">{{ time }}</span>
+    </div>
+    <div class="chats-block__chat-information-bottom">
+      <div class="chats-block__chat-message">{{ mess }}</div>
+      {{#if amount}}
+        <div class="chats-block__chat-amount">{{ amount }}</div>
+      {{else}}
+        <div class="chats-block__chat-amount" hidden></div>
+      {{/if}}
+    </div>
+  </div>
+</div>

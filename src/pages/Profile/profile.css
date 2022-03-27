@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.profile  {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  height: 310px;
+  border: 1px solid #C0C0C0;
+}
+
+.profile__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 110px;
+  background-color: #CCEAFB;
+}
+
+.profile__avatar {
+  width: 80px;
+  height: 80px;
+  margin: 0 15px;
+  background-color: #5FBBEF;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.profile__header-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  height: 80px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.profile__header-additional-info {
+  display: flex;
+  flex-direction: column;
+  line-height: 20px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #717171;
+}
+
+.profile-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-grow: 1;
+}
+
+.profile-content-item {
+  display: flex;
+  height: 36px;
+  line-height: 36px;
+  font-size: 16px;
+}
+
+.profile-content-item__name {
+  display: inline-block;
+  width: 90px;
+  padding-left: 9px;
+  color: #717171;
+  border: 1px solid #717171;
+  border-radius: 4px;
+  border-bottom-left-radius: 0;
+}
+
+.profile-content-item__value {
+  display: inline-block;
+  width: 200px;
+  margin-left: -1px;
+  padding-left: 14px;
+  font-size: 16px;
+  color: black;
+  border: 1px solid #717171;
+  border-radius: 4px;
+  border-bottom-right-radius: 0;
+}
+
+.profile-footer {
+  display: flex;
+  height: 65px;
+}
+
+.profile__button-edit {
+  flex-grow: 1;
+  line-height: 65px;
+  text-align: center;
+  font-size: 42px;
+  font-family: Exo2, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #717171;
+  background-color: #C0C0C0;
+  border: none;
+}
+
+
+
+.profile__button-edit:hover {
+  color: #CCEAFB;
+  background-color: #5FBBEF;
+}
+
+.profile__button-exit-outer {
+  background-color: #717171;
+}
+
+.profile__button-exit-outer:hover {
+  background-color: #BF1616;
+}
+
+.profile__button-exit {
+  width: 65px;
+  height: 100%;
+  border: none;
+  background: url('../../assets/svg/button-exit.svg') no-repeat;
+  background-position: 50% 50%;
+}
+
+.profile__button-exit:hover {
+  background: url('../../assets/svg/button-exit-hover.svg') no-repeat;
+  background-position: 50% 50%;
+}

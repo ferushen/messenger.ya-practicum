@@ -1,15 +1,23 @@
-<div>
-  <form method="post" name="userForm">
-    <label>Login</label>
-    <input type="text" name="account" placeholder="Здесь почта">
+---
+title: Login
+cssPath:
+  - login.css
+---
 
-    <label>Password</label>
-    <input type="text" name="password" placeholder="Здесь пароль">
-    
-    <input type="submit" value="Войти">      
+{{!< main}} 
+
+<div class="main">
+  <form method="post" class="login-form" name="userForm">
+    <div class="login-form__content">
+      <div class="login-form__content-inputs">
+        <input type="email" class="input login-form__input" name="account" placeholder="Введите почту" />
+        <input type="password" class="input login-form__input" name="password" placeholder="Введите пароль" />
+      </div>
+      <a href="../Signup/signup.hbs" class="login-form__button-reg" title="Переход на SignUp">Регистрация</a>
+    </div>
+    <!-- Временно установлен тег <a> вместо <button type="submit">  -->
+    <button type="submit" class="login-form__button-enter">
+      <a href="../Chats/chats.hbs" class="login-form__button-enter-text" title="Переход на Chats">Вход</a>
+    </button>
   </form>
 </div>
-<br>
-<button type="button">Регистрация</button>
-
-<script src="login.js"></script>
