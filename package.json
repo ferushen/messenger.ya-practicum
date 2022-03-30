@@ -13,6 +13,10 @@
     "@anikin/parcel-transformer-handlebars": "^1.0.9",
     "parcel": "^2.3.2",
     "postcss-nested": "^5.0.6",
-    "postcss-short": "^5.0.0"
+    "postcss-short": "^5.0.0",
+    "typescript": "^4.6.3"
+  },
+  "engines": {
+    "node": ">=16.0.0"
   }
 }

@@ -34,54 +34,17 @@ isChatSelected: true
     <div class="main-block__chat-block">
       <div class="chat-block__chat">
         <div class="chat__date">18 марта</div>
-        
-        <div class="chat__message">
-          <div class="chat__message-inner chat__message_from">
-            Таким образом сложившаяся структура организации в значительной степени обуславливает создание модели развития. Идейные соображения высшего порядка, а также постоянный количественный рост и сфера нашей активности позволяет оценить значение существенных финансовых и административных условий. Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет оценить значение направлений прогрессивного развития. Разнообразный и богатый опыт постоянное информационно-пропагандистское обеспечение нашей деятельности в значительной степени обуславливает создание систем . . . . . . . . . . . . . . . . .
-            <span class="chat__message-time chat__message-time_from">21:17</span>
-          </div>     
-        </div>
-
-        <div class="chat__message">
-          <div class="chat__message-inner chat__message_from">
-            asd
-            <span class="chat__message-time chat__message-time_from">21:20</span> 
-          </div>
-        </div>
-
-        <div class="chat__message">
-          <div class="chat__message-inner chat__message_from">  
-            Посмотрим на деле как будет, хорошо?
-            <span class="chat__message-time chat__message-time_from">21:20</span>
-            <div class="chat__message-avatar chat__message-avatar_from"></div>
-          </div>      
-        </div>
-
-        <div class="chat__message">
-          <div class="chat__message-inner chat__message_to">
-            Ок понял Ок ячсячс.ывфью выюьювбы sad s
-            <span class="chat__message-time chat__message-time_to_recd">21:20</span> 
-          </div>        
-        </div>
-
-        <div class="chat__message">
-          <div class="chat__message-inner chat__message_to">
-            Ок понял Ок ячсячс.ывфью выюьювбы
-            <span class="chat__message-time chat__message-time_to_sent">22:15</span> 
-          </div>        
-        </div>
-        <div class="chat__message">
-          <div class="chat__message-inner chat__message_to">
-            <span>:)</span>
-            <span class="chat__message-time chat__message-time_to_sent">22:15</span>
-            <div class="chat__message-avatar chat__message-avatar_to"></div>
-          </div>          
-        </div>
+        {{>message who="from" time="21:17" text="Таким образом сложившаяся структура организации в значительной степени обуславливает создание модели развития. Идейные соображения высшего порядка, а также постоянный количественный рост и сфера нашей активности позволяет оценить значение существенных финансовых и административных условий. Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет оценить значение направлений прогрессивного развития. Разнообразный и богатый опыт постоянное информационно-пропагандистское обеспечение нашей деятельности в значительной степени обуславливает создание систем . . . . . . . . . . . . . . . . ."}}
+        {{>message who="from" time="21:20" text="asd"}}
+        {{>message who="from" time="21:20" lastMessage=true text="Посмотрим на деле как будет, хорошо?"}}
+        {{>message who="to" status="recd" time="21:20" text="Ок понял Ок ячсячс.ывфью выюьювбы sad s"}}
+        {{>message who="to" status="recd" time="22:15" text="Ок понял Ок ячсячс.ывфью выюьювбы"}}
+        {{>message who="to" status="sent" time="22:15" lastMessage=true text=":)"}}
       </div>
     </div>
     <div class="main-block__send-block">
       <button class="button button-staple"></button>
-      <input type="text" class="input-send" name="inpuntSend" placeholder="Ваше сообщение..."> 
+      <input type="text" class="input-send" name="message" placeholder="Ваше сообщение..."> 
       <button type="submit" class="button button-send">SEND</button> 
     </div>
     {{/if}}

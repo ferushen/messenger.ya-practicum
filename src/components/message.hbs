@@ -1,0 +1,9 @@
+<div class="chat__message">
+  <div class="chat__message-inner chat__message_{{ who }}">  
+    {{ text }}
+    <span class="chat__message-time chat__message-time_{{ who }}{{#if (eq who "to")}}_{{ status }}{{/if}}">{{ time }}</span>
+    {{#if lastMessage}}
+    <div class="chat__message-avatar chat__message-avatar_{{ who }}"></div>
+    {{/if}}
+  </div>      
+</div>

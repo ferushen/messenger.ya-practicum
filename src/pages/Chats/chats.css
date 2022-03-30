@@ -116,6 +116,7 @@
 }
 
 .chat__message {
+  position: relative;
   min-height: 30px;
   line-height: 20px;
   margin: 3px 0;

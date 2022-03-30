@@ -1,0 +1,12 @@
+{{#if signup }} 
+<div class="signup-form__inputs-item">
+  <label class="signup-form__label">{{ label }}</label>
+  <input type={{ type }} class="signup-form__input input" name={{ name }} />
+</div>
+{{else if profile-edit}}
+<div class="profile-edit-form__inputs-item">
+  <label class="profile-edit-form__label">{{ label }}</label>
+  <input type={{ type }} class="profile-edit-form__input input" name={{ name }} />
+</div>
+{{/if}}
+<br>
