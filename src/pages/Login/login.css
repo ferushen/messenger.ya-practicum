@@ -1,15 +1,11 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+@import '../../components/input.css';
 
 .login-form {
   display: flex;
   flex-direction: row;
   width: 440px;
   height: 280px;
-  border: 1px solid #717171;
+  border: 1px solid var(--darker-gray);
   
 }
 
@@ -18,7 +14,6 @@
   flex-direction: column;
   justify-content: space-between;
   flex-grow: 1;
-
 }
 
 .login-form__content-inputs {
@@ -30,10 +25,6 @@
   padding: 40px 0;
 }
 
-.login-form__input {
-  width: 240px;
-}
-
 .login-form__button-reg {
   display: block;
   height: 64px;
@@ -41,18 +32,18 @@
   text-align: center;
   cursor: pointer;
   font-size: 32px;
-  font-family: 'Exo 2', sans-serif;
+  font-family: var(--font-family-Exo);
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
-  color: #74A1BB;
-  background-color: #C0C0C0;
+  color: var(--dirty-blue);
+  background-color: var(--lighter-gray);
   border: none;
 }
 
 .login-form__button-reg:hover {
-  color: #4A4A4A;
-  background-color: #A0D3F0;
+  color: var(--dark-gray);
+  background-color: var(--lighter-blue);
 }
 
 .login-form__button-enter {
@@ -62,8 +53,8 @@
   width: 110px;
   padding: 0;
   cursor: pointer;
-  color: #717171;
-  background-color: #C0C0C0;
+  color: var(--darker-gray);
+  background-color: var(--lighter-gray);
   border: none;
 }
 
@@ -73,17 +64,17 @@
   writing-mode: vertical-lr;
   text-orientation: upright;
   font-size: 50px;
-  font-family: 'Exo 2', sans-serif;
+  font-family: var(--font-family-Exo);
   font-weight: 800;
-  letter-spacing: -25px;
+  letter-spacing: -15px;
   text-decoration: none;
 }
 
 .login-form__button-enter-text:visited {
-  color: #717171;
+  color: var(--darker-gray);
 }
 
 .login-form__button-enter:hover, 
 .login-form__button-enter-text:visited:hover {
-  color: #9C9C9C;
+  color: var(--gray);
 }

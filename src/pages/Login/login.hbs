@@ -10,12 +10,12 @@ cssPath:
   <form method="post" class="login-form" name="userForm">
     <div class="login-form__content">
       <div class="login-form__content-inputs">
-        <input type="email" class="input login-form__input" name="login" placeholder="Введите почту" />
-        <input type="password" class="input login-form__input" name="password" placeholder="Введите пароль" />
+        {{> input type="email" name="email" placeholder='Введите почту' }}
+        {{> input type="password" name="password" placeholder="Введите пароль" }}
       </div>
-      <a href="../Signup/signup.hbs" class="login-form__button-reg" title="Переход на SignUp">Регистрация</a>
+      <a href="../SignUp/signup.hbs" class="login-form__button-reg" title="Переход на SignUp">Регистрация</a>
     </div>
-    <!-- Временно установлен тег <a> вместо <button type="submit">  -->
+    {{!-- TODO: Временно установлен тег <a> вместо <button type="submit"> --}}
     <button type="submit" class="login-form__button-enter">
       <a href="../Chats/chats.hbs" class="login-form__button-enter-text" title="Переход на Chats">Вход</a>
     </button>
