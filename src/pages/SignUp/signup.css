@@ -1,0 +1,42 @@
+@import '../../components/input.css';
+@import '../../components/button.css';
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 600px;
+  height: 600px;
+  border: 1px solid var(--darker-gray);
+}
+
+.signup-form__inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  min-width: 440px;
+  margin: 30px 0;
+}
+
+.signup-form__title {
+  margin-top: 20px;
+  font-size: 32px;
+  font-family: var(--font-family-Exo);
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--gray);
+}
+
+.signup-form__button {
+  width: 100%;
+  height: 64px;
+  border: none;
+  font-size: 32px;
+  font-family: var(--font-family-Exo);
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--gray);
+  background-color: var(--lighter-gray);
+}

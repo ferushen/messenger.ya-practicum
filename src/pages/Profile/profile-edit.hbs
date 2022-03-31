@@ -1,0 +1,24 @@
+---
+title: Profile Edit
+cssPath:
+  - profile-edit.css
+---
+
+{{!< main}}
+
+<div class="main">
+  <form method="post" class="profile-edit-form" name="editUserForm">
+    <span class="profile-edit-form__title">Редактирование</span>
+    <div class="profile-edit-form__inputs">
+      {{> input type="email" name="email" label="Почта" }}
+      {{> input type="text" name="login" label="Логин" }}
+      {{> input type="text" name="first_name" label="Имя" }}
+      {{> input type="text" name="second_name" label="Фамилия" }}
+      {{> input type="text" name="phone" label="Телефон" }}
+      {{> input type="password" name="oldPassword" label="Старый пароль" }}
+      {{> input type="password" name="newPassword" label="Новый пароль" }}
+      {{> input type="password" name="newPasswordConfirmed" label="Подтвердите пароль" }}
+    </div>
+    <button type="submit" class="button profile-edit-form__button">Применить изменения</button>
+  </form>
+  </div>

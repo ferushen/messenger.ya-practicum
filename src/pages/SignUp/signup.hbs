@@ -1,0 +1,23 @@
+---
+title: SignUp
+cssPath: 
+  - signup.css
+---
+
+{{!< main}} 
+
+<div class="main">
+  <form method="post" class="signup-form" name="newUserForm">
+    <span class="signup-form__title">Регистрация</span>
+    <div class="signup-form__inputs">
+      {{> input type="email" name="email" label="Почта" }}
+      {{> input type="text" name="login" label="Логин" }}
+      {{> input type="text" name="first_name" label="Имя" }}
+      {{> input type="text" name="second_name" label="Фамилия" }}
+      {{> input type="text" name="phone" label="Телефон" }}
+      {{> input type="password" name="password" label="Пароль" }}
+      {{> input type="password" name="passwordConfirmed" label="Подтвердите пароль" }}
+    </div>
+    <button type="submit" class="button signup-form__button">Создать аккаунт</button>
+  </form>
+  </div>

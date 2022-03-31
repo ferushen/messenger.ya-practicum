@@ -1,0 +1,9 @@
+<div class="message">
+  <div class="message-inner message_{{ who }}">  
+    {{ text }}
+    <span class="message-time message-time{{#if (eq who "to")}}_{{ status }}{{/if}}">{{ time }}</span>
+    {{#if lastMessage}}
+    <div class="message-avatar message-avatar"></div>
+    {{/if}}
+  </div>      
+</div>

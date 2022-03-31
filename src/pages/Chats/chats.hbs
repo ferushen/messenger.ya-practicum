@@ -1,0 +1,53 @@
+---
+title: Chats
+cssPath:
+  - chats.css
+isChatSelected: true
+---
+
+{{!< main}}
+
+<div class="messenger">
+  <div class="messenger__sidebar sidebar">
+    <div class="messenger__header sidebar__header">
+      <button class="button button-small"><a href="../Profile/profile.hbs"><img src="../../assets/svg/button-options.svg" alt="options"></a></button>
+      <input type="text" class="input-search-chat" placeholder="Поиск" name="searchChat"></input>
+    </div>
+    <div class="chats-block">
+      {{> [chat-item] isActive=true title="Интересная беседа" time="15:23" message="Тут было что-то написано..." }}
+      {{> [chat-item] title="Название чата" time="9:25" message="Тут было что-то написано..." amount="2"}}
+      {{> [chat-item] title="Название чата" time="4:13" message="Тут было что-то написано..." amount="15"}}
+      {{> [chat-item] title="Название чата" time="пт" message="Тут было что-то написано..." amount=8}}
+      {{> [chat-item] title="Название чата" time="чт" message="Тут было что-то написано..."}}
+      {{> [chat-item] title="Название чата" time="чт" message="Тут было что-то написано..." amount="999"}}
+    </div> 
+  </div>
+  <div class="main-block">
+    {{#if isChatSelected}}
+    <div class="messenger__header main-block__header">
+      <!-- Кнопка должна создавать новый чат если нет активного чата, иначе - добавлять в активный чат нового учатсника -->
+      <button class="button button-small"><img src="../../assets/svg/button-add.svg" alt="Добавить еще участника"></button>
+      {{!-- Если в чате два участника => "Профиль собеседника", иначе => "Настройка чата" --}}
+      <button class="button button-small"><img src="../../assets/svg/button-options.svg" alt="Профиль собеседника"></button>
+      <span class="main-block__header-title">Интересная беседа</span> 
+      <button class="button button-small button-close"><img src="../../assets/svg/button-close.svg" alt="close"></button>
+    </div>
+    <div class="main-block__chat-block chat-block">
+      <div class="chat-block__chat">
+        <div class="chat-block__chat-date">18 марта</div>
+        {{>message who="from" time="21:17" text="Таким образом сложившаяся структура организации в значительной степени обуславливает создание модели развития. Идейные соображения высшего порядка, а также постоянный количественный рост и сфера нашей активности позволяет оценить значение существенных финансовых и административных условий. Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет оценить значение направлений прогрессивного развития. Разнообразный и богатый опыт постоянное информационно-пропагандистское обеспечение нашей деятельности в значительной степени обуславливает создание систем . . . . . . . . . . . . . . . . ."}}
+        {{>message who="from" time="21:20" text="asd"}}
+        {{>message who="from" time="21:20" lastMessage=true text="Посмотрим на деле как будет, хорошо?"}}
+        {{>message who="to" status="recd" time="21:20" text="Ок понял Ок ячсячс.ывфью выюьювбы sad s"}}
+        {{>message who="to" status="recd" time="22:15" text="Ок понял Ок ячсячс.ывфью выюьювбы"}}
+        {{>message who="to" status="sent" time="22:15" lastMessage=true text=":)"}}
+      </div>
+    </div>
+    <div class="main-block__send-block">
+      <button class="button button-staple"></button>
+      <input type="text" class="input-send" name="message" placeholder="Ваше сообщение..."> 
+      <button type="submit" class="button button-send">Отправить</button> 
+    </div>
+    {{/if}}
+  </div>
+</div>
