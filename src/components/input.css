@@ -1,0 +1,40 @@
+.input {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input__label {
+  display: inline-block;
+  width: 180px;
+  height: 36px;
+  line-height: 36px;
+  padding-left: 10px;
+  font-family: var(--font-family-Exo);
+  font-weight: 300;
+  font-size: 16px;
+  color: var(--darker-gray);
+  border: 1px solid var(--gray);
+  border-radius: 5px;
+}
+
+.input__control {
+  height: 36px;
+  line-height: 36px;
+  padding: 0 10px;
+  border: none;
+  border-radius: 5px;
+  font-family: var(--font-family-Exo);
+  font-weight: 300;
+  font-size: 16px;
+  background-color: var(--the-lightest-gray);
+}
+
+.input__control:hover {
+  border: 1px solid var(--darker-gray);
+}
+
+.input__control:focus {
+  background-color: var(--white);
+  border: 1px solid var(--dark-gray);
+  outline: none;
+}

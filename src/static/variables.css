@@ -1,0 +1,25 @@
+:root {
+  --white: white;
+  --black: black;
+  --red: #BF1616;
+
+  --the-lightest-gray: #EDEDED;
+  --lighter-gray: #C0C0C0;
+  --gray: #A6A6A6;
+  --darker-gray: #717171;
+  --dark-gray: #4A4A4A;
+
+  --orange-white: #FFECDB;
+  --orange-light: #FFC8B0;
+  --orange: #FFB09E;
+
+  --light-blue: #CCEAFB;
+  --lighter-blue: #A0D3F0;
+  --dirty-blue: #74A1BB;
+  --blue: #5FBBEF;
+  --bright-blue: #179EEA;
+
+
+  --font-family-Arial: Arial, sans-serif;
+  --font-family-Exo: Exo2, sans-serif;
+}
